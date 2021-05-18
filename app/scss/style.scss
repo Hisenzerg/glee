@@ -3,9 +3,94 @@
 @import "vars";
 @import "fonts";
 
+.header{
+  padding: 50px 0;
+  background-color: #fff;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
+.menu{
+  &__items{
+    display: flex;
+  }
+  &__list{
+    @extend %rub-med;
+    font-size: 15px;
+    line-height: 0.8;
+    color: #436372;
+  }
+  &__list:not(:first-child){
+    margin-left: 35px;
+  }
+}
 
-
+.user-nav{
+  display: flex;
+  align-items: center;
+  &__item:not(:first-child){
+    margin-left: 20px;
+  }
+  &__link{
+    position: relative;
+  }
+  &__item--search{
+    padding: 17px;
+    background-color: #edf1f4;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  &__item--dots{
+    padding: 15px;
+    background-color: #a3bbc8;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  &__link--like{
+    margin-right: 55px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/devide-line.svg');
+      width: 1px;
+      height: 32px;
+      right: -30px;
+      top: -9px;
+    }
+  }
+  &__img--like{
+    transform: scale(-1, 1);
+  }
+  &__item--cartlike{
+    display: flex;
+    padding: 20px 40px 15px 40px;
+    background-color: #fcd7b6;
+    width: 175px;
+    height: 55px;
+    border-radius: 25px;
+  }
+  &__num{
+    color: #436372;
+    position: absolute;
+    @extend %dms-reg;
+    font-size: 10px;
+    line-height: 2.7;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    right: -8px;
+    top: -7px;
+    text-align: center;
+    line-height: 1.7;
+  }
+}
 
 
 
