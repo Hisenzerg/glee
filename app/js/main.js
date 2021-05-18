@@ -1,3 +1,5 @@
 $(function () {
-  
+  $('.your-class').slick({
+    
+  });
 });
