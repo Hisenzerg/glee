@@ -1,5 +1,6 @@
 $(function () {
-  $('.your-class').slick({
-    
+  $('.top-slider__items').slick({
+    arrows: false,
+    dots: true
   });
 });

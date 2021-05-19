@@ -191,6 +191,46 @@
   }
 }
 
+.top-slider{
+  &__inner{
+    
+    // height: 100vh;
+    background-image: url('../images/top-slider-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__item-info{
+    padding: 220px 0 240px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    @extend %rub-med;
+    font-size: 72px;
+    color: #243f4d;
+    line-height: 0.9;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  &__text{
+    max-width: 360px;
+    margin-bottom: 45px;
+    @extend %rub-reg;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #436372;
+  }
+}
+
+.slick-dots{
+  display: flex;
+  li{
+    button{
+      
+    }
+  }
+}
+
 
 
 
