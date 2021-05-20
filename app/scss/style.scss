@@ -266,6 +266,75 @@
   }
 }
 
+.services{
+  &__inner{
+    padding: 42px 0;
+    background-color: #fef7f0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__item{
+    position: relative;
+    padding-left: 30px;
+  }
+  &__item--support::after{
+    content: '';
+    position: absolute;
+    background-image: url('../images/icons/services-line.svg');
+    width: 1px;
+    height: 180px;
+    right: -170px;
+    top: -41px;
+  }
+  &__item--delivery::after{
+    content: '';
+    position: absolute;
+    background-image: url('../images/icons/services-line.svg');
+    width: 1px;
+    height: 183px;
+    right: -170px;
+    top: -58px;
+  }
+  &__item--support::before{
+    content: '';
+    position: absolute;
+    background-image: url('../images/icons/support.svg');
+    width: 50px;
+    height: 53px;
+    left: -45px;
+  }
+  &__item--delivery::before{
+    content: '';
+    position: absolute;
+    background-image: url('../images/icons/delivery.svg');
+    width: 50px;
+    height: 36px;
+    left: -45px;
+  }
+  &__item--payment::before{
+    content: '';
+    position: absolute;
+    background-image: url('../images/icons/payment.svg');
+    width: 54px;
+    height: 52px;
+    left: -45px;
+  }
+  &__title{
+    @extend %dms-bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #414141;
+  }
+  &__text{
+    @extend %dms-reg;
+    font-size: 16px;
+    line-height: 1.9;
+    color: #585858;
+    max-width: 215px;
+  }
+}
+
 
 
 
