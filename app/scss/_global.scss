@@ -26,3 +26,29 @@ body{
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.title{
+  @extend %dms-bold;
+  font-size: 36px;
+  color: #191919;
+  margin-bottom: 20px;
+}
+
+.filter-btn{
+  margin-bottom: 80px;
+}
+
+.btn{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  @extend %dms-bold;
+  font-size: 16px;
+  color: #8b8b8b;
+  transition: color .5s;
+}
+
+.mixitup-control-active{
+  color: #191919;
+}
+

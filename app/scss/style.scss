@@ -4,71 +4,71 @@
 @import "libs";
 @import "fonts";
 
-.header{
+.header {
   padding: 50px 0;
   background-color: #fff;
-  &__inner{
+  &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
 
-.menu{
-  &__items{
+.menu {
+  &__items {
     display: flex;
   }
-  &__list{
+  &__list {
     @extend %rub-med;
     font-size: 15px;
     line-height: 0.8;
     color: #436372;
   }
-  &__list:not(:first-child){
+  &__list:not(:first-child) {
     margin-left: 35px;
   }
 }
 
-.user-nav{
+.user-nav {
   display: flex;
   align-items: center;
-  &__item:not(:first-child){
+  &__item:not(:first-child) {
     margin-left: 20px;
   }
-  &__link{
+  &__link {
     position: relative;
   }
-  &__item--search{
+  &__item--search {
     padding: 17px;
     background-color: #edf1f4;
     height: 50px;
     width: 50px;
     border-radius: 50%;
   }
-  &__item--dots{
+  &__item--dots {
     padding: 15px;
     background-color: #a3bbc8;
     height: 50px;
     width: 50px;
     border-radius: 50%;
   }
-  &__link--like{
+  &__link--like {
     margin-right: 55px;
     position: relative;
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       position: absolute;
-      background-image: url('../images/icons/devide-line.svg');
+      background-image: url("../images/icons/devide-line.svg");
       width: 1px;
       height: 32px;
       right: -30px;
       top: -9px;
     }
   }
-  &__img--like{
+  &__img--like {
     transform: scale(-1, 1);
   }
-  &__item--cartlike{
+  &__item--cartlike {
     display: flex;
     padding: 20px 40px 15px 40px;
     background-color: #fcd7b6;
@@ -76,7 +76,7 @@
     height: 55px;
     border-radius: 25px;
   }
-  &__num{
+  &__num {
     color: #436372;
     position: absolute;
     @extend %dms-reg;
@@ -93,37 +93,37 @@
   }
 }
 
-.footer{
+.footer {
   padding: 80px 0 40px;
 }
 
-.footer-top{
+.footer-top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
   padding-bottom: 70px;
   border-bottom: 1px solid #a3bbc8;
-  &__item{
+  &__item {
     @extend %rub-reg;
     font-size: 14px;
     color: #7b7b7b;
   }
-  &__item--logo{
+  &__item--logo {
     max-width: 195px;
   }
-  &__logo{
+  &__logo {
     display: block;
     margin-bottom: 25px;
   }
-  &__address{
+  &__address {
     line-height: 1.7;
   }
   &__address,
-  &__phone{
+  &__phone {
     display: block;
     margin-bottom: 20px;
   }
-  &__title{
+  &__title {
     text-transform: uppercase;
     @extend %dms-bold;
     color: #1f2044;
@@ -131,30 +131,30 @@
     padding-top: 20px;
     font-size: 16px;
   }
-  &__list-item{
+  &__list-item {
     margin-bottom: 20px;
   }
-  &__text{
+  &__text {
     max-width: 235px;
     line-height: 1.7;
     margin-bottom: 35px;
   }
-  &__form{
+  &__form {
     display: flex;
   }
-  &__input{
+  &__input {
     max-width: 170px;
     width: 100%;
     border: none;
     background-color: #fef7f0;
     padding: 13px;
-    &::placeholder{
+    &::placeholder {
       font-size: 12px;
       @extend %dms-reg;
       color: #234969;
     }
   }
-  &__btn{
+  &__btn {
     cursor: pointer;
     font-size: 14px;
     padding: 11px 15px;
@@ -165,46 +165,45 @@
   }
 }
 
-.footer-bottom{
+.footer-bottom {
   display: flex;
   justify-content: space-between;
   @extend %rub-reg;
   font-size: 14px;
   color: #7b7b7b;
   position: relative;
-  &__menu-items{
+  &__menu-items {
     display: flex;
   }
-  
-  &__menu-list:not(:first-child){
+
+  &__menu-list:not(:first-child) {
     margin-left: 15px;
-    &::before{
-      content: '|     ';
+    &::before {
+      content: "|     ";
       position: absolute;
-       @extend %rub-reg;
+      @extend %rub-reg;
       font-size: 14px;
       color: #7b7b7b;
     }
   }
-  &__menu-link{
+  &__menu-link {
     padding-left: 15px;
   }
 }
 
-.top-slider{
-  &__inner{
-    
+.top-slider {
+  &__inner {
     // height: 100vh;
-    background-image: url('../images/top-slider-bg.png');
+    background-image: url("../images/top-slider-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
-  &__item-info{
+  &__item-info {
     padding: 220px 0 240px;
     display: flex;
     justify-content: space-between;
   }
-  &__title{
+  &__title {
     @extend %rub-med;
     font-size: 72px;
     color: #243f4d;
@@ -212,7 +211,7 @@
     margin-bottom: 40px;
     text-transform: uppercase;
   }
-  &__text{
+  &__text {
     max-width: 360px;
     margin-bottom: 45px;
     @extend %rub-reg;
@@ -220,7 +219,7 @@
     line-height: 1.6;
     color: #436372;
   }
-  &__btn{
+  &__btn {
     padding: 25px 60px 20px 25px;
     position: relative;
     display: block;
@@ -229,10 +228,10 @@
     color: #fff;
     font-size: 15px;
     @extend %rub-med;
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       position: absolute;
-      background-image: url('../images/icons/btn-arrow.svg');
+      background-image: url("../images/icons/btn-arrow.svg");
       width: 22px;
       height: 9px;
       right: 20px;
@@ -241,13 +240,12 @@
   }
 }
 
-.slick-dots{
+.slick-dots {
   display: flex;
   justify-content: center;
   padding-bottom: 45px;
-  li{
-    
-    button{
+  li {
+    button {
       padding: 10px 13px;
       border: none;
       @extend %rub-med;
@@ -256,77 +254,77 @@
       border-radius: 50%;
       margin-right: 12px;
       cursor: pointer;
-      transition: all .5s;
+      transition: all 0.5s;
     }
-    &.slick-active{
-      button{
+    &.slick-active {
+      button {
         background-color: rgb(255, 255, 255);
       }
     }
   }
 }
 
-.services{
-  &__inner{
+.services {
+  &__inner {
     padding: 42px 0;
     background-color: #fef7f0;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  &__item{
+  &__item {
     position: relative;
     padding-left: 30px;
   }
-  &__item--support::after{
-    content: '';
+  &__item--support::after {
+    content: "";
     position: absolute;
-    background-image: url('../images/icons/services-line.svg');
+    background-image: url("../images/icons/services-line.svg");
     width: 1px;
     height: 180px;
     right: -170px;
     top: -41px;
   }
-  &__item--delivery::after{
-    content: '';
+  &__item--delivery::after {
+    content: "";
     position: absolute;
-    background-image: url('../images/icons/services-line.svg');
+    background-image: url("../images/icons/services-line.svg");
     width: 1px;
     height: 183px;
     right: -170px;
     top: -58px;
   }
-  &__item--support::before{
-    content: '';
+  &__item--support::before {
+    content: "";
     position: absolute;
-    background-image: url('../images/icons/support.svg');
+    background-image: url("../images/icons/support.svg");
     width: 50px;
     height: 53px;
     left: -45px;
   }
-  &__item--delivery::before{
-    content: '';
+  &__item--delivery::before {
+    content: "";
     position: absolute;
-    background-image: url('../images/icons/delivery.svg');
+    background-image: url("../images/icons/delivery.svg");
     width: 50px;
     height: 36px;
     left: -45px;
   }
-  &__item--payment::before{
-    content: '';
+  &__item--payment::before {
+    content: "";
     position: absolute;
-    background-image: url('../images/icons/payment.svg');
+    background-image: url("../images/icons/payment.svg");
     width: 54px;
     height: 52px;
     left: -45px;
   }
-  &__title{
+  &__title {
     @extend %dms-bold;
     font-size: 18px;
     margin-bottom: 15px;
     color: #414141;
   }
-  &__text{
+  &__text {
     @extend %dms-reg;
     font-size: 16px;
     line-height: 1.9;
@@ -335,16 +333,124 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
+.products {
+  padding: 75px 0 100px;
+  &__top {
+    text-align: center;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 40px 30px;
+    margin-bottom: 170px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 377px;
+    text-align: center;
+    padding: 50px 25px 25px;
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    border-radius: 10px;
+    position: relative;
+    &:hover .products__user-nav{
+      opacity: 1;
+    }
+  }
+  &__img {
+    object-fit: cover;
+  }
+  &__item-title {
+    @extend %dms-med;
+    font-size: 16px;
+    color: #243f4d;
+    margin-bottom: 15px;
+  }
+  &__item-price {
+    @extend %dms-bold;
+    font-size: 16px;
+    color: #a3bbc8;
+  }
+  &__user-nav{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+  &__link {
+    margin-right: 15px;
+    &:hover {
+      circle {
+        transition: all .5s;
+        fill: #a3bbc8;
+      }
+      path {
+        transition: all .5s;
+        fill: #fff;
+      }
+    }
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bottom-item{
+    display: flex;
+    align-items: flex-end;
+    background-color: #feefe2;
+    position: relative;
+    padding: 80px 140px 80px 400px;
+  }
+  &__bottom-img{
+    position: absolute;
+    left: 110px;
+  }
+  &__bottom-info{
+    max-width: 330px;
+    padding-bottom: 22px;
+  }
+  &__bottom-title{
+    @extend %dms-bold;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #243f4d;
+    margin-bottom: 20px;
+  }
+  &__bottom-text{
+    @extend %rub-reg;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #243f4d;
+    margin-bottom: 60px;
+  }
+  &__bottom-link{
+    padding: 22px 85px 22px 20px;
+    @extend %rub-med;
+    font-size: 15px;
+    line-height: 0.8;
+    color: #436372;
+    border: 1px solid rgba(67, 99, 114, 0.4);
+    border-radius: 5px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/product-btn-arrow.svg');
+      width: 22px;
+      height: 9px;
+      right: 17px;
+      top: 27px;
+    }
+  }
+}
 
 
 
