@@ -334,7 +334,7 @@
 }
 
 .products {
-  padding: 75px 0 100px;
+  padding: 75px 0 0;
   &__top {
     text-align: center;
   }
@@ -449,6 +449,38 @@
       right: 17px;
       top: 27px;
     }
+  }
+}
+
+.design{
+  padding: 100px 0 110px;
+  &__top{
+    text-align: center;
+  }
+  &__content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 35px 30px;
+  }
+  &__item{
+    position: relative;
+  }
+  &__info{
+    @extend %dms-bold;
+    position: absolute;
+    top: 40px;
+    left: 35px;
+  }
+  &__info-title{
+    max-width: 165px;
+    font-size: 20px;
+    color: #191919;
+    margin-bottom: 20px;
+  }
+  &__info-text{
+    font-size: 16px;
+    color: #a3bbc8;
   }
 }
 
