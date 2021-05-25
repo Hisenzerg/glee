@@ -52,3 +52,28 @@ body{
   color: #191919;
 }
 
+.breadcrumps{
+  display: inline-flex;
+  justify-content: center;
+  &__list{
+    display: flex;
+  }
+  &__item{
+    padding-right: 22px;
+    @extend %rub-reg;
+    font-size: 14px;
+    color: #222933;
+    position: relative;
+    &::after{
+      content: '/';
+      position: absolute;
+      right: 7px;
+    }
+    &:last-child{
+      padding-right: 0;
+       &::after{
+        display: none;
+      }
+    }
+  }
+}

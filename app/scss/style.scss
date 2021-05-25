@@ -611,6 +611,17 @@
   align-items: center;
 }
 
+.top{
+  padding: 30px 0;
+  background-color: #edf1f4;
+  text-align: center;
+  &__title{
+    @extend %rub-lht;
+    font-size: 36px;
+    color: #222933;
+    margin-bottom: 7px;
+  }
+}
 
 
 @import "media";
