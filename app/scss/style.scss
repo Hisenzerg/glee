@@ -497,6 +497,119 @@
   align-items: center;
 }
 
+.blog{
+  padding: 110px 80px;
+  background-image: url('../images/blog-bg.svg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__header-link{
+    @extend %dms-bold;
+    color: #262626;
+    padding-right: 20px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/link-blog.svg');
+      width: 6px;
+      height: 11px;
+      right: 0;
+      top: 5px;
+    }
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 69px;
+  }
+  &__item{
+    overflow: hidden;
+    min-height: 415px;
+    max-width: 370px;
+    &:hover{
+      .blog__item-imglink{
+        img{
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  &__item-imglink{
+    img{
+      transition: all .5s;
+      object-fit: cover;
+      height: 250px;
+    }
+  }
+  &__item-news{
+    padding: 3px 27px;
+    position: absolute;
+    background-color: #a3bbc8;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    @extend %pop-bold;
+    font-size: 14px;
+    top: -15px;
+  }
+  &__item-content{
+    position: relative;
+    padding: 30px 30px 25px;
+    background-color: #fff;
+  }
+  &__item-title{
+    min-height: 70px;
+    max-width: 285px;;
+    margin-bottom: 15px;
+    @extend %dms-med;
+    font-size: 18px;
+    color: #262626;
+  }
+  &__item-info{
+    padding-top: 20px;
+    display: flex;
+    border-top: 1px solid #e0e0e0;
+    @extend %rub-reg;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  &__item-date::before,
+  &__item-author::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -2px;
+    top: -4px;
+  }
+  &__item-date{
+    position: relative;
+    padding-left: 25px;
+    margin-right: 40px;
+    &::before{
+      background-image: url('../images/icons/date.svg');
+    }
+  }
+  &__item-author{
+    position: relative;
+    padding-left: 25px;
+    &::before{
+      background-image: url('../images/icons/user-blog.svg');
+    }
+  }
+}
+
+.partners{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
 
