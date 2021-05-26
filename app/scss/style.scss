@@ -697,6 +697,29 @@
   }
 }
 
+.terms{
+  padding: 120px 0 0;
+  &__collect-info-list{
+    list-style-type: decimal-leading-zero;
+    margin-bottom: 60px;
+  }
+  &__collect-info-title{
+    @extend %rub-med;
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #243f4d;
+  }
+  &__collect-info-item,
+  &__collect-info-text{
+    @extend %rub-reg;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #243f4d;
+    margin-bottom: 20px;
+  }
+}
+
 
 
 
