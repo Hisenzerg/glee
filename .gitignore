@@ -3,7 +3,6 @@
 .idea/*
 .vscode
 *.sublime*
-dist/
 node_modules/
 npm-debug.*
 package-lock.json
