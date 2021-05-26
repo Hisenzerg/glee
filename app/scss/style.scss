@@ -611,6 +611,16 @@
   align-items: center;
 }
 
+.partners-fluid{
+  padding: 80px 0;
+  background-color: #fef7f0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .top{
   padding: 30px 0;
   background-color: #edf1f4;
@@ -636,6 +646,7 @@
     display: block;
   }
   &__input{
+    padding: 0 15px;
     margin-top: 13px;
     height: 55px;
     display: block;
@@ -686,15 +697,7 @@
   }
 }
 
-.partners-fluid{
-  padding: 80px 0;
-  background-color: #fef7f0;
-  &__inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
+
 
 
 
