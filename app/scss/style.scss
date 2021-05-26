@@ -720,6 +720,115 @@
   }
 }
 
+.about{
+  color: #243f4d;
+  padding-top: 120px;
+  &__experience{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+  }
+  &__experience-img{
+    object-fit: cover;
+    height: 677px;
+  }
+  &__experience-content{
+    max-width: 550px;
+  }
+  &__experience-subtitle{
+    display: flex;
+    align-items: center;
+  }
+  &__experience-num{
+    margin-right: 25px;
+    @extend %rub-bold;
+    font-size: 140px;
+    color: #a3bbc8;
+  }
+  &__experience-slogan,
+  &__experience-text{
+    max-width: 85px;
+    @extend %rub-reg;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  &__experience-title{
+    @extend %dms-bold;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  &__experience-text{
+    max-width: 550px;
+    padding-bottom: 60px;
+    margin-bottom: 35px;
+    border-bottom: 2px solid #e6eaf0;
+  }
+  &__experience-items{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    @extend %dms-bold;
+  }
+  &__experience-item{
+    padding: 0 27px 0 60px;
+    border-right: 1px solid #e6eaf0;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 15px;
+    }
+    &:last-child{
+      border-right: none;
+    }
+  }
+  &__experience-item--projects::before{
+    background-image: url('../images/icons/note.svg');
+    width: 36px;
+    height: 38px;
+  }
+  &__experience-item--revenue::before{
+    background-image: url('../images/icons/megafon.svg');
+    width: 43px;
+    height: 39px;
+  }
+  &__experience-item--awards::before{
+    background-image: url('../images/icons/award.svg');
+    width: 42px;
+    height: 40px;
+  }
+  &__experience-itemnum{
+    font-size: 36px;
+  }
+}
+
+.features{
+  padding: 80px 0;
+  background-color: #fcd7b6;
+  color: #243f4d;
+  &__inner{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    text-align: center;
+    @extend %dms-bold;
+  }
+  &__item-img{
+    display: inline-block;
+    object-fit: cover;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__num{
+    font-size: 36px;
+  }
+}
+
 
 
 
