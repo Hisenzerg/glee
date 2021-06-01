@@ -32,11 +32,11 @@ $(function () {
   });
 
   $('.products-item__star').rateYo({
-    starWidth: "11px",
+    starWidth: "20px",
     ratedFill: "#ffcc00",
     normalFill: "#d6d6d6",
     readOnly: true,
-    spacing: "9px",
+    spacing: "12px",
   });
 
   $('.filter-price__input').ionRangeSlider({

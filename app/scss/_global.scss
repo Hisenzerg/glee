@@ -77,3 +77,25 @@ body{
     }
   }
 }
+
+.pagination{
+  @extend %rub-reg;
+  color: #243f4d;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0 0;
+  &__list{
+    display: flex;
+    align-items: center;
+  }
+  &__link{
+    padding: 18px 20px;
+    border: 1px solid #a3bbc8;
+    margin-right: 15px;
+  }
+  &__link--active{
+    color: #fff;
+    background-color: #a3bbc8;
+  }
+}
+
