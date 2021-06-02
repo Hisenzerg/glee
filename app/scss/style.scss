@@ -1094,18 +1094,6 @@
     padding-left: 15px;
     cursor: pointer;
   }
-  .select-style{
-    position: relative;
-    &::after{
-      content: '';
-      position: absolute;
-      background-image: url('../images/icons/angle-filter-down.svg');
-      width: 10px;
-      height: 5px;
-      right: 0;
-      top: 14px;
-    }
-  }
   &__filter-btn--active{
     path{
       fill: #3e5e6f;
@@ -1117,6 +1105,16 @@
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 40px 30px;
   }
+}
+
+.jq-selectbox__trigger-arrow {
+  right: 0;
+  top: 14px;
+  right: 12px;
+  width: 10px;
+  height: 5px;
+  border: none;
+  background-image: url('../images/icons/angle-filter-down.svg');
 }
 
 .shop-content__items{
@@ -1148,7 +1146,7 @@
   box-shadow: none;
   text-shadow: none;
   background: transparent;
-  padding-right: 20px;
+  padding-right: 27px;
   margin-left: 40px;
 }
 
@@ -1156,9 +1154,6 @@
   background: transparent;
 }
 
-.jq-selectbox__trigger{
-  display: none;
-}
 
 .jq-selectbox__select:active{
   box-shadow: none;
@@ -1169,7 +1164,7 @@
 }
 
 .jq-selectbox__dropdown{
-  top: 28px;
+  top: 5px;
 }
 
 .jq-selectbox li:hover {
