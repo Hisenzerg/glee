@@ -10,6 +10,10 @@
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
 }
+%rub-bold{
+  font-family: 'Rubik-Bold', sans-serif;
+  font-weight: 700;
+}
 %dms-reg{
   font-family: 'DMSans-Regular', sans-serif;
   font-weight: 400;
@@ -25,6 +29,14 @@
 %pop-bold{
   font-family: 'Poppins-Bold', sans-serif;
   font-weight: 700;
+}
+
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
 }
 
 @function max($numbers...) {
