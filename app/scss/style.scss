@@ -1359,6 +1359,37 @@
   }
 }
 
+.product-tabs{
+  padding-top: 60px;
+  &__top{
+    text-align: center;
+    @extend %rub-med;
+    font-size: 18px;
+    color: #243f4d;
+    margin-bottom: 35px;
+  }
+  &__top-item{
+    display: inline-block;
+    width: 241px;
+    padding: 20px 0;
+    background-color: #edf1f4;
+    border-radius: 5px;
+    &:not(:first-child){
+      margin-left: 15px;
+    }
+  }
+  &__top-item--active{
+    color: #fff;
+    background-color: #a3bbc8;
+  }
+  &__content-item{
+    display: none;
+    &.product-tabs__content-item--active{
+      display: block;
+    }
+  }
+}
+
 
 
 
