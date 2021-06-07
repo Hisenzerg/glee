@@ -912,6 +912,99 @@
   }
 }
 
+.team{
+  padding-top: 120px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info{
+    max-width: 305px;
+  }
+  &__info-title{
+    @extend %dms-bold;
+    font-size: 36px;
+    color: #243f4d;
+    margin-bottom: 35px;
+  }
+  &__info-text{
+    @extend %rub-reg;
+    line-height: 1.8;
+    color: #243f4d;
+    margin-bottom: 30px;
+  }
+  &__info-btn{
+    display: inline-block;
+    padding: 20px 60px 20px 20px;
+    @extend %rub-med;
+    font-size: 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #a3bbc8;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 11px;
+      background-image: url('../images/icons/arrow-team.svg');
+      right: 15px;
+      top: 24px;
+    }
+  }
+  &__items{
+    width: 770px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px 30px;
+  }
+  &__item{
+    position: relative;
+  }
+  &__item-img{
+    width: 370px;
+    height: 320px;
+    object-fit: cover;
+  }
+  &__item-info{
+    position: absolute;
+    bottom: -66px;
+    padding: 30px 20px 30px 25px;
+    background-color: #fff;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    min-width: 325px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item-name{
+    @extend %dms-bold;
+    font-size: 22px;
+    color: #436372;
+    margin-bottom: 20px;
+  }
+  &__item-position{
+    @extend %rub-reg;
+    color: #565872;
+  }
+  &__item-social{
+    display: flex;
+    align-items: center;
+  }
+  &__item-social-link{
+    padding: 12px;
+    display: inline-block;
+    margin-right: 8px;
+    background-color: #f6f6f6;
+    border-radius: 50%;
+    &:nth-child(2){
+      padding: 13px 9px;
+    }
+  }
+}
+
+
+
 .shop{
   padding: 110px 0 115px;
   color: #243f4d;
