@@ -17,6 +17,7 @@
 .menu {
   &__items {
     display: flex;
+    margin-left: 160px;
   }
   &__list {
     @extend %rub-med;
@@ -193,7 +194,6 @@
 
 .top-slider {
   &__inner {
-    // height: 100vh;
     background-image: url("../images/top-slider-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -647,37 +647,39 @@
   &__item-title{
     min-height: 70px;
     max-width: 285px;;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     @extend %dms-med;
     font-size: 18px;
     color: #262626;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
   }
-  &__item-info{
-    padding-top: 20px;
-    display: flex;
-    border-top: 1px solid #e0e0e0;
-    @extend %rub-reg;
-    font-size: 12px;
-    text-transform: uppercase;
-  }
-  &__item-date::before,
-  &__item-author::before{
+}
+
+.blog-info{
+  display: flex;
+  @extend %rub-reg;
+  font-size: 12px;
+  text-transform: uppercase;
+  &__date::before,
+  &__author::before{
     content: '';
     position: absolute;
     width: 20px;
-    height: 20px;
+    height: 22px;
     left: -2px;
     top: -4px;
+    background-repeat: no-repeat;
   }
-  &__item-date{
+  &__date{
     position: relative;
     padding-left: 25px;
     margin-right: 40px;
     &::before{
-      background-image: url('../images/icons/date.svg');
+      background-image: url('../images/icons/calendar.svg');
     }
   }
-  &__item-author{
+  &__author{
     position: relative;
     padding-left: 25px;
     &::before{
@@ -1440,6 +1442,129 @@
 .slick-disabled{
   border: 2px solid #edf1f4;
 }
+
+.blog-page{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__filters{
+    margin-right: 0;
+  }
+  &__content{
+    max-width: 830px;
+  }
+  &__item{
+    margin-bottom: 70px;
+  }
+  &__images{
+    position: relative;
+    margin-bottom: 40px;
+  }
+  &__images-info{
+    padding: 30px;
+    background-color: #a3bbc8;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+  }
+  &__date::before{
+    background-image: url('../images/icons/calendar-page.svg');
+  }
+  &__author::before{
+    background-image: url('../images/icons/user-blog-page.svg');
+  }
+  &__images-img{
+    width: 830px;
+    height: 501px;
+    object-fit: cover;
+    position: relative;
+  }
+  &__item-title{
+    @extend %rub-reg;
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 30px;
+  }
+  &__item-text{
+    max-width: 800px;
+    @extend %rub-reg;
+    line-height: 1.8;
+    margin-bottom: 60px;
+    color: #243f4d;
+  }
+  &__item-btn{
+    @extend %rub-reg;
+    color: #a3bbc8;
+    padding: 20px 85px 20px 20px;
+    border: 1px solid #a3bbc8; 
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 9px;
+      background-image: url('../images/icons/arrow-blog-btn.svg');
+      right: 15px;
+      top: 25px;
+    }
+  }
+  .pagination{
+    padding: 30px 0 0;
+    justify-content: start;
+  }
+}
+
+.filter-search{
+  margin-bottom: 60px;
+  &__form{
+    display: flex;
+  }
+  &__input{
+    outline: #edf1f4;
+    padding: 0 10px;
+    height: 40px;
+    min-width: 238px;
+    border: 1px solid #edf1f4;
+    border-radius: 5px;
+    border-right: none;
+  }
+  &__btn{
+    padding: 10px;
+    border: 1px solid #edf1f4;
+    border-radius: 5px;
+    margin-left: -7px;
+  }
+}
+
+.recent-post{
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__img{
+    width: 71px;
+    height: 71px;
+    object-fit: cover;
+  }
+  &__info{
+    max-width: 180px;
+  }
+  &__title{
+    display: block;
+    @extend %rub-med;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  &__date{
+    color: #9a9a9a;
+  }
+}
+
 
 
 
