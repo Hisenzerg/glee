@@ -1624,6 +1624,7 @@
     border-right: none;
   }
   &__btn{
+    cursor: pointer;
     padding: 10px;
     border: 1px solid #edf1f4;
     border-radius: 5px;
@@ -1655,6 +1656,144 @@
   }
   &__date{
     color: #9a9a9a;
+  }
+}
+
+.blog-one{
+  &__article{
+    h2{
+      @extend %rub-reg;
+      font-size: 36px;
+      color: #333;
+      margin: 20px 0;
+    }
+    h5{
+      @extend %rub-med; 
+      font-size: 18px;
+      line-height: 1.8;
+      color: #243f4d; 
+      margin: 65px 0 -16px;
+    }
+    p{
+      @extend %rub-reg;
+      line-height: 1.8;
+      margin: 30px 0;
+      color: #243f4d;
+    }
+    blockquote{
+      padding: 20px 90px 20px 35px;
+      background-color: #edf1f4;
+      @extend %rub-reg;
+      line-height: 1.8;
+      color: #243f4d;
+      border-left: 7px solid #a3bbc8;
+      margin: 40px 0;
+      span{
+        display: block;
+        margin-top: 10px;
+      }
+    }
+  }
+  &__article-img-left{
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+  &__article-img-right{
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  &__author{
+    padding: 20px 0;
+    border-top: 2px solid #ebebeb;
+    border-bottom: 2px solid #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  &__author-box{
+    display: flex;
+    align-items: center;
+  }
+  &__author-img{
+    width: 76px;
+    height: 76px;
+    object-fit: cover;
+    display: block;
+    margin-right: 25px;
+  }
+  &__author-name{
+    @extend %rub-med;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  &__author-position{
+    @extend %rub-reg;
+    color: #666;
+  }
+  &__author-tags{
+    margin-bottom: 15px;
+    span{
+      margin-right: 30px;
+    }
+  }
+  &__author-tags-link{
+    color: #999;
+  }
+  &__author-share{
+    span{
+      margin-right: 20px;
+    }
+  }
+  &__author-share-link{
+    margin-right: 20px;
+    path{
+      transition: all .3s;
+      fill: #999;
+    }
+    &:hover{
+      path{
+        fill: #243f4d;
+      }
+    }
+  }
+  &__author-tags,
+  &__author-share{
+    span{
+      @extend %rub-reg;
+      color: #333;
+    }
+  }
+}
+
+.comments{
+  margin-bottom: 10px;
+  &__amount-title{
+    @extend %rub-bold;
+    font-size: 24px;
+    color: #436372;
+    margin-bottom: 60px;
+  }
+}
+
+.comments-item{
+  display: flex;
+  justify-content: space-between;
+  &__img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover
+  }
+  &__content{
+    max-width: 700px;
+  }
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
   }
 }
 
