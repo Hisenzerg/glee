@@ -1770,7 +1770,6 @@
 }
 
 .comments{
-  margin-bottom: 10px;
   &__amount-title{
     @extend %rub-bold;
     font-size: 24px;
@@ -1782,6 +1781,13 @@
 .comments-item{
   display: flex;
   justify-content: space-between;
+  &:not(:last-child){
+    margin-bottom: 25px;
+    .comments-item__content{
+      padding-bottom: 30px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+  }
   &__img{
     width: 100px;
     height: 100px;
@@ -1794,6 +1800,47 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+  }
+  &__name{
+    @extend %rub-bold;
+    color: #436372;
+  }
+  &__date{
+    @extend %rub-reg;
+    font-size: 14px;
+    color: #9e9e9e;
+  }
+  &__text{
+    line-height: 1.8;
+    color: #565872;
+    margin-bottom: 15px;
+  }
+  &__btn{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #516278;
+    padding: 0 20px 0 0;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 11px;
+      right: 0;
+      top: 6px;
+      background-image: url('../images/icons/arrow-reply.svg');
+    }
+  }
+}
+
+.comments-item--reply{
+  justify-content: flex-end;
+  .comments-item__img{
+    margin-right: 35px;
+  }
+  .comments-item__text{
+    max-width: 560px;
   }
 }
 
