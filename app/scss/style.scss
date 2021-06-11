@@ -15,6 +15,9 @@
 }
 
 .menu {
+  &__btn{
+    display: none;
+  }
   &__items {
     display: flex;
     margin-left: 160px;
