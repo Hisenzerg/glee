@@ -128,6 +128,7 @@
     margin-bottom: 20px;
   }
   &__title {
+    pointer-events: none;
     text-transform: uppercase;
     @extend %dms-bold;
     color: #1f2044;
@@ -171,6 +172,7 @@
 
 .footer-bottom {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   @extend %rub-reg;
   font-size: 14px;

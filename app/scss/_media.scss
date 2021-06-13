@@ -14,9 +14,17 @@
       text-align: center;
       position: absolute;
       display: block;
+      background-color: #fff;
       top: 120px;
       width: 100%;
       left: 0;
+      transform: translateY(-200%);
+      transition: all .5s;
+      z-index: 5;
+    }
+    &__items--active{
+      transform: translateY(0);
+      transition: all .5s;
     }
     &__list{
       padding: 20px 0;
@@ -43,6 +51,7 @@
         width: 100%;
         height: 3px;
         background-color: #819faf;
+        transition: opacity .3s;
       }
       &::before,
       &::after{
@@ -51,6 +60,7 @@
         width: 100%;
         height: 3px;
         background-color: #819faf;
+        transition: transform .3s;
       }
       &::before{
         top: 0;
@@ -58,10 +68,31 @@
       &::after{
         bottom: 0;
       }
+      &.menu__btn--active span{
+        opacity: 0;
+      }
+      &.menu__btn--active.menu__btn::before{
+        transform: translateY(9px) rotate(135deg);
+      }
+      &.menu__btn--active.menu__btn::after{
+        transform: translateY(-9px) rotate(-135deg);
+      } 
     }
   }
   .user-nav{
     margin-left: auto;
+  }
+  .footer-top{
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 880px){
+  .footer-top{
+    flex-wrap: wrap;
+    &__item--newsletter{
+      width: 100%;
+    }
   }
 }
 
@@ -80,6 +111,49 @@
     order: 0;
     &__items{
       top: 190px;
+    }
+  }
+  .footer-bottom{
+    font-size: 12px;
+    justify-content: center;
+    &__copy{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 520px){
+  .footer-top{
+    &__list{
+      display: none;
+    }
+    &__item{
+      width: 100%;
+    }
+    &__title{
+      padding-top: 0;
+      pointer-events: initial;
+      margin: 15px 0;;
+    }
+    &__title--toggle{
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      padding-right: 20px;
+      &::after{
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 16px;
+        top: 2px;
+        right: 0;
+        background-image: url('../images/icons/angle-title-toggle.svg');
+        transition: all .3s;
+      }
+      &.footer-top__title--active.footer-top__title::after{
+        transform: rotate(180deg);
+        transition: all .3s;
+      }
     }
   }
 }

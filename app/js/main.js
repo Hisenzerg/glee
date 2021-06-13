@@ -1,5 +1,15 @@
 $(function () {
   
+  $('.footer-top__title--toggle').on('click', function () {
+    $(this).siblings().slideToggle();
+    $(this).toggleClass('footer-top__title--active')
+  })
+
+  $('.menu__btn').on('click', function () {
+    $('.menu__items').toggleClass('menu__items--active');
+    $('.menu__btn').toggleClass('menu__btn--active');
+  });
+
   $('.product-tabs__top-item').on('click', function (e) {
     e.preventDefault();
     $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
