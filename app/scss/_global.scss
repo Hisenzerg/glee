@@ -105,4 +105,17 @@ body{
   height: 335px;
 }
 
+@media (max-width: 450px){
+  .title{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 350px){
+  .title{
+    font-size: 28px;
+  }
+}
+
 

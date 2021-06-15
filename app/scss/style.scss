@@ -378,6 +378,7 @@
   }
   &__bottom-text{
     @extend %rub-reg;
+    max-width: 340px;
     font-size: 16px;
     line-height: 1.8;
     color: #243f4d;
@@ -584,7 +585,7 @@
 }
 
 .blog{
-  padding: 110px 80px;
+  padding: 110px 0 80px;
   background-image: url('../images/blog-bg.svg');
   background-repeat: no-repeat;
   background-position: bottom center;

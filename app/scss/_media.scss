@@ -1,3 +1,50 @@
+@media (max-width: 1450px){
+  .services{
+    &__item--support::after{
+      background-image: none;
+    }
+    &__item--delivery::after{
+      background-image: none;
+    }
+  }
+}
+
+@media (max-width: 1400px){
+  .products{
+    &__bottom{
+      display: block;
+    }
+    &__bottom-item{
+      align-items: center;
+      justify-content: center;
+      padding: 15px 10px 15px 15px;
+      margin-bottom: 30px;
+    }
+    &__bottom-info{
+      max-width: 100%;
+    }
+    &__bottom-img{
+      margin-right: 35px;
+      position: relative;
+      left: 0;
+    }
+  }
+  .blog{
+    &__items{
+      column-gap: 20px;
+      flex-wrap: wrap;
+    }
+    &__item{
+      margin: 0 auto 30px;
+      box-shadow: 0px 20px 60px 0px rgba(202, 202, 202, 0.35);
+    }
+    &__item-content{
+      padding: 30px 30px 32px;
+    }
+  }
+}
+
+
 @media (max-width: 1200px){
   .menu{
     &__items{
@@ -6,7 +53,30 @@
   }
 }
 
+@media (max-width: 1150px){
+  .top-slider{
+    .slick-slide img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1100px){
+  .design{
+    &__content{
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 23px 18px;
+    }
+  }
+}
+
 @media (max-width: 1050px){
+  .products-item{
+    min-height: 330px;
+    &__img{
+      margin-bottom: 20px;
+    }
+  }
   .menu{
     margin-left: 40px;
     order: 1;
@@ -85,13 +155,89 @@
   .footer-top{
     padding-bottom: 40px;
   }
+  .services{
+    &__inner{
+      flex-wrap: wrap;
+    }
+    &__item{
+      margin-left: 75px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &__text{
+      max-width: 100%;
+    }
+  }
 }
 
 @media (max-width: 880px){
+  .products{
+    &__content{
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 25px 10px;
+      margin-bottom: 60px;
+    }
+  }
   .footer-top{
     flex-wrap: wrap;
     &__item--newsletter{
       width: 100%;
+    }
+  }
+  .video{
+    height: 360px;
+  }
+}
+
+@media (max-width: 770px){
+  .top-slider{
+    &__item-info{
+      padding: 55px 0 55px;
+    }
+  }
+  .products{
+    padding-top: 35px;
+    &__bottom-img{
+      max-height: 320px;
+    }
+  }
+  .design{
+    padding: 25px 0 40px;
+    &__content{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__item{
+      margin: 0 auto;
+    }
+    .filter-btn {
+      margin-bottom: 30px;
+    }
+  }
+  .blog{
+    padding: 40px 0 45px;
+    &__header{
+      display: block;
+    }
+    &__items{
+      margin-bottom: 0;
+    }
+  }
+  .partners{
+    flex-wrap: wrap;
+    justify-content: center;
+    &__link{
+      display: block;
+      margin-top: 15px;
+      margin-right: 15px;
+    }
+  }
+}
+
+@media (max-width: 680px){
+  .products{
+    &__content{
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 25px 10px;
     }
   }
 }
@@ -120,9 +266,21 @@
       margin-bottom: 20px;
     }
   }
+  .products{
+    &__bottom-item{
+      display: block;
+    }
+    &__bottom-img{
+      margin-bottom: 30px;
+      max-height: 260px;
+    }
+  }
 }
 
 @media (max-width: 520px){
+  .header{
+    padding: 50px 0 30px;
+  }
   .footer-top{
     &__list{
       display: none;
@@ -154,6 +312,65 @@
         transform: rotate(180deg);
         transition: all .3s;
       }
+    }
+  }
+  .top-slider{
+    &__title{
+      font-size: 45px;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+    &__text{
+      margin-bottom: 20px;
+    }
+  }
+  .video{
+    height: 250px;
+  }
+}
+
+@media (max-width: 450px){
+  .products{
+    &__content{
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 25px 10px;
+    }
+  }
+  .products-item{
+    max-width: 100%;
+  }
+  .filter-btn{
+    margin-bottom: 30px;
+    .btn{
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 370px){
+  .products{
+    &__bottom-title{
+      font-size: 19px;
+    }
+    &__bottom-text{
+      font-size: 15px;
+      margin-bottom: 35px;
+    }
+  }
+  .design{
+    &__info{
+      top: 5px;
+      left: 15px;
+    }
+  }
+  .blog{
+    &__item-imglink {
+      img{
+        height: 220px;
+      }
+    }
+    &__item-content {
+      padding: 30px 12px 60px;
     }
   }
 }
