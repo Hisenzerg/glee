@@ -1,10 +1,128 @@
+html,
 body{
-  min-width: 320px;
+  position: relative;
   overflow-x: hidden;
+  height: 100%;
+}
+
+body{
+  font-size: 16px;
+  min-width: 320px;
+  @extend %rub-reg;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  flex-grow: 1;
 }
 
 .container {
-  max-width: 1230px;
+  max-width: 1800px;
   padding: 0px 15px;
   margin: 0 auto;
 }
+
+.container__fluid{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.comments-item--reply__container{
+  max-width: 710px;
+  margin-left: auto;
+}
+
+.title{
+  @extend %dms-bold;
+  font-size: 36px;
+  color: #191919;
+  margin-bottom: 20px;
+}
+
+.filter-btn{
+  margin-bottom: 80px;
+}
+
+.btn{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  @extend %dms-bold;
+  font-size: 16px;
+  color: #8b8b8b;
+  transition: color .5s;
+}
+
+.mixitup-control-active{
+  color: #191919;
+}
+
+.breadcrumps{
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  &__list{
+    display: flex;
+  }
+  &__item{
+    padding-right: 22px;
+    @extend %rub-reg;
+    font-size: 14px;
+    color: #222933;
+    position: relative;
+    &::after{
+      content: '/';
+      position: absolute;
+      right: 7px;
+    }
+    &:last-child{
+      padding-right: 0;
+       &::after{
+        display: none;
+      }
+    }
+  }
+}
+
+.pagination{
+  @extend %rub-reg;
+  color: #243f4d;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0 0;
+  &__list{
+    display: flex;
+    align-items: center;
+  }
+  &__link{
+    padding: 18px 20px;
+    border: 1px solid #a3bbc8;
+    margin-right: 15px;
+  }
+  &__link--active{
+    color: #fff;
+    background-color: #a3bbc8;
+  }
+}
+
+#map {
+  width: 505px;
+  height: 335px;
+}
+
+@media (max-width: 450px){
+  .title{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 350px){
+  .title{
+    font-size: 28px;
+  }
+}
+
+

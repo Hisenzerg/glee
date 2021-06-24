@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a3bbc8;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+    <filter id="filter" x="-51" y="-45" width="147" height="147" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="6" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="7.071"/>
+      <feFlood result="flood" flood-color="#252525" flood-opacity="0.05"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle id="BG" class="cls-1" cx="22" cy="22" r="22"/>
+  <path id="Forma_1" data-name="Forma 1" class="cls-2" d="M12.529,14.3H14.81l3.249,11.77a0.8,0.8,0,0,0,.769.584h9.987a0.8,0.8,0,0,0,.729-0.478l3.634-8.37a0.809,0.809,0,0,0-.066-0.758,0.792,0.792,0,0,0-.663-0.358H21.415a0.8,0.8,0,0,0,0,1.6H31.23l-2.944,6.774h-8.86l-3.249-11.77a0.8,0.8,0,0,0-.769-0.585H12.529A0.8,0.8,0,0,0,12.529,14.3Zm5.544,17.962a1.807,1.807,0,1,0-1.8-1.807A1.807,1.807,0,0,0,18.073,32.265Zm11.274,0H29.48A1.865,1.865,0,1,0,29.347,32.265Z"/>
+</svg>
