@@ -1014,6 +1014,9 @@
 .shop{
   padding: 110px 0 115px;
   color: #243f4d;
+  &__filter-btn{
+    display: none;
+  }
   &__inner{
     display: flex;
   }
@@ -1841,7 +1844,9 @@
 }
 
 .comments-item--reply{
-  justify-content: flex-end;
+  &__inner{
+    display: flex;
+  }
   .comments-item__img{
     margin-right: 35px;
   }
